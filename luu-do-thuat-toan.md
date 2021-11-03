@@ -96,3 +96,15 @@ Bài 8 có lẽ là bài gây khó chịu cho mình nhất vì nó rất là dà
 ![image](https://user-images.githubusercontent.com/53972592/140005601-3dbae8df-b554-4baa-b0b8-eea5cf685c0b.png)
 ![image](https://user-images.githubusercontent.com/53972592/140005626-aa08d11c-b1f0-49bc-9092-36b824eab95e.png)
 
+Mặc dù chưa bao gồm đủ các trường hợp, bài làm vẫn tốn hết 3 lần chụp màn hình nên mình sẽ cố gắng viết thật ngắn gọn.
+
+Đầu tiên, cho nhập vào 3 biến `x`,`y` và `z` lần lượt là độ dài 3 cạnh của tam giác. Sau đó, mình xét trường hợp như sau:
+  - Độ dài 3 cạnh bằng nhau hết không?
+    - Có -> **Tam giác đều.**
+    - Không -> Có bất kì cặp cạnh nào bằng nhau không?
+      - Có -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
+        - Có -> **Tam giác vuông cân.**
+        - Không -> **Tam giác cân.** 
+      - Không -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
+        - Có -> **Tam giác vuông**
+        - Không -> **Tam giác thường**
