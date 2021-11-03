@@ -86,3 +86,13 @@ Mình tự viết thêm hàm pow() để có thể sử dụng và giải quyế
 Trước tiên, mình tạo một hàm pow() nhận hai giá trị lần lượt là cơ số `a` và số mũ `b`. Bên trong hàm, mình khởi tạo hai biến `i = 1` và `temp = a` để sử dụng cho vòng lặp với điều kiện là `i < b`. Với mỗi lần lặp, `a *= temp` được thực hiện và `i` tăng lên một đơn vị cho đến khi bằng `b`. Như vậy, `a *= temp` sẽ được thực hiện `b` lần hay nói cách khác, ta có được `a` mũ `b`. Cuối cùng, khi vòng lặp bị phá, hàm trả về `a`.
 
 Khi đã có hàm pow(), mình bát đầu lưu đồ như bình thường. Đầu tiên, cho nhập vào `n`. Kế tiếp, khởi tạo các biến `num = 0`, `i = 1` và `temp = -2`(giá trị của số hạng đầu tiên). Sau đó, mình tạo một vòng lặp với điều kiện `i <= n`. Bên trong vòng lặp, mình cho `num = temp` ngay từ đầu để phòng trường hợp `n` bằng 1 rồi mới tiếp tục cho `temp = temp*5 + 2*pow(3,i+1) - 6*pow(7,i+1) + 12` như công thức của đề bài. Tương tự các bài tập trên, `i++` được thực hiện để tăng giá trị `i` đến khi hết thỏa điều kiện. Cuối cùng, ta thu được `num` là số hạng thứ `n` cần tìm.
+
+## BÀI 8.
+![image](https://user-images.githubusercontent.com/53972592/140005295-c35f98c7-6c7e-44b2-b0f1-5a341465fc15.png)
+
+Bài 8 có lẽ là bài gây khó chịu cho mình nhất vì nó rất là dài và lúc sửa bài, mình phát hiện bài làm còn thiếu 2 trường hợp khác. 2 trường hợp đó mình sẽ nói đến khi code lại lưu đồ nên tạm thời bài làm dưới đây còn thiếu sót:
+
+![image](https://user-images.githubusercontent.com/53972592/140005571-f1244496-72fe-4e6f-b614-ff136ca718f6.png)
+![image](https://user-images.githubusercontent.com/53972592/140005601-3dbae8df-b554-4baa-b0b8-eea5cf685c0b.png)
+![image](https://user-images.githubusercontent.com/53972592/140005626-aa08d11c-b1f0-49bc-9092-36b824eab95e.png)
+
