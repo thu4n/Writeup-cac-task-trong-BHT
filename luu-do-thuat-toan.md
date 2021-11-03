@@ -121,6 +121,7 @@ Mình google định nghĩa số chính phương rồi bắt tay vô làm bài n
 ![image](https://user-images.githubusercontent.com/53972592/140008679-660012a3-74cb-42de-a1aa-51e1ade4ed46.png)
 
 Tương tự bài 7, mình viết thêm hàm rồi bắt tay vô làm thôi:
+
 ![image](https://user-images.githubusercontent.com/53972592/140008728-7363b4d2-08c2-467b-89c2-ebd800d85b65.png)
 
 Bạn đọc vui lòng kéo lên xem lại bài 7, mình đã có giải thích phần tạo hàm pow(). Ở đây sẽ không nhắc lại nữa.
