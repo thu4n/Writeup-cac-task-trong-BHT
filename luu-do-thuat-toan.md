@@ -102,9 +102,9 @@ Mặc dù chưa bao gồm đủ các trường hợp, bài làm vẫn tốn hế
   - Độ dài 3 cạnh bằng nhau hết không?
     - Có -> **Tam giác đều.**
     - Không -> Có bất kì cặp cạnh nào bằng nhau không?
-      - Có -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
+      + Có -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
         - Có -> **Tam giác vuông cân.**
         - Không -> **Tam giác cân.** 
-      - Không -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
+      + Không -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
         - Có -> **Tam giác vuông**
         - Không -> **Tam giác thường**
