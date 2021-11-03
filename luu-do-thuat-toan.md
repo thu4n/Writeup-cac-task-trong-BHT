@@ -1,10 +1,12 @@
-# 10 BÀI LƯU ĐỒ THUẬT TOÁN
+# 10 BÀI LƯU ĐỒ THUẬT TOÁN(KÈM LUÔN 10 BÀI CODE)
 **Deadline đầu tiên mình nhận được khi tham gia vào Ban Học Tập của Đoàn khoa MMT&TT.**
 ## BÀI 1. 
 ![image](https://user-images.githubusercontent.com/53972592/139857911-f9d823a5-771c-4de4-8b30-6dff7d8a158d.png)
 
 Đây là một bài mà mình nhận định là khá đơn giản. Dù không nêu rõ nhưng mình hiểu ý của người ra đề là chỉ được sử dụng phép nhân trong lưu đồ. Dưới đây là bài làm của mình:
 ![image](https://user-images.githubusercontent.com/53972592/139859749-cd0182c0-9ff9-407d-adb9-28360eda9539.png)
+![image](https://user-images.githubusercontent.com/53972592/140067194-fc89171a-d49f-4ce8-b965-11dd8911a60e.png)
+
 
 Đầu tiên, cho nhập vào biến `x`. Tiếp theo, mình gán giá trị bình phương của `x` vào một biến mới `x2`. Tương tự, mình lại tiếp tục gán trị bình phương của `x2` vào biến `x4` để được **x mũ 4**. Cuối cùng, để có giá trị của **x mũ 11**, mình tạo biến `x11` và gán cho nó giá trị từ biểu thức `x4*x4*x2*x`. Như vậy, sử dụng phép nhân số mũ có cùng cơ số đã giúp mình tìm được giá trị của **x mũ 11** sau **5** phép nhân.
 
@@ -17,6 +19,8 @@ First, a variable `x` is inputted. Next, I assign the value of the square of `x`
 
 Dạng bài này khi đọc vô thì thứ đầu tiên mình nghĩ tới là dùng vòng lặp và cứ thế, mình triển khai theo ý tưởng đó ra lưu đồ sau đây:
 ![image](https://user-images.githubusercontent.com/53972592/139971341-0ba8f60d-8c2a-46e7-85e9-bd65ee92159c.png)
+![image](https://user-images.githubusercontent.com/53972592/140070109-a2769b4c-ecfa-4a19-b247-a68a0f5ef29b.png)
+![image](https://user-images.githubusercontent.com/53972592/140070159-da35186b-e7bc-4426-9540-477317bf4775.png)
 
 Đầu tiên, cho nhập vào biến `n`. Tiếp theo, mình tạo một biến `sum` với giá trị bằng 0 để chứa giá trị của cái tổng mà mình đang tìm. Sau đó, mình tạo một vòng lặp với điều kiện lặp là `n/10 > 0`, mình sẽ giải thích điều kiện này trong lát nữa. Nếu điều kiện được thỏa mãn, mình thực hiện tiếp 2 câu lệnh là `sum += n%10` và `n /= 10`. Khi **chia lấy dư** một số nguyên bất kì có ít nhất 2 chữ số cho 10 trong C++, ta được thương là chữ số cuối cùng của số nguyên đó. Vậy với câu lệnh thứ nhất, chữ số cuối cùng trong `n` được cộng dồn vào `sum` với mỗi lần lặp. Khi **chia** một số nguyên bất kì có ít nhất 2 chữ số cho 10 trong C++, thương là số nguyên đó nhưng mất đi 1 chữ số ở hàng đơn vị. Vậy với câu lệnh thứ hai, `n` sẽ mất đi 1 chữ số ngoài cùng để trong các lần lặp tiếp theo, những chữ số còn lại của `n` sẽ được cộng vào `sum`. Vòng lặp sẽ được thực hiện tới khi `n` còn 1 chữ số, khi đó, nếu lấy `n` chia cho 10 sẽ thu được kết quả là 0. Do đó, điều kiện lặp không còn được thỏa mãn nữa và ta chuyển sang cộng chữ số còn sót lại của `n` vào `sum`. Từ đó, mình thu được `sum` là tổng của các chữ số trong `n`.
 
@@ -29,6 +33,7 @@ First, a variable `n` is inputted. Next, I create a variable named `sum` with th
 
 Với bài này, mình tiếp tục sử dụng vòng lặp trong đó có sự tăng dần của nhiều biến:
 ![image](https://user-images.githubusercontent.com/53972592/139971394-8270092a-0408-480d-b3a6-bec398d4c55c.png)
+![image](https://user-images.githubusercontent.com/53972592/140071762-86c4e534-9c93-4e79-9b3d-b71293219f69.png)
 
 Đầu tiên, cho nhập vào 2 biến `x` và `n`. Tiếp theo, mình thực hiện các công việc sau:
   1. Khởi tạo biến `i` với giá trị bằng 1.
@@ -51,6 +56,7 @@ After that, I create a loop with the condition of `i <= n`. Inside the loop, `s 
 
 Tiếp tục sử dụng vòng lặp, lần nầy mình cần một biến để liên tục thay đổi dấu của các phần tử:
 ![image](https://user-images.githubusercontent.com/53972592/139995247-220e6c78-9185-4e4b-a55a-7a012e4830c1.png)
+![image](https://user-images.githubusercontent.com/53972592/140079617-9767d4b9-b679-4b22-8f33-e753ee0e12b5.png)
 
 Đầu tiên, cho nhập vào 2 biến `x` và `n`.  Tiếp theo, mình thực hiện các công việc sau:
   1. Khởi tạo biến `i` với giá trị bằng 0.
@@ -66,6 +72,8 @@ Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên t
 Để làm bài này, mình đã sử dụng tới hàm sqrt():
 
 ![image](https://user-images.githubusercontent.com/53972592/139999636-4584ee55-5038-471f-9696-62a5da561237.png)
+![image](https://user-images.githubusercontent.com/53972592/140081168-acb466f2-3cdd-4238-8921-d2072782efa5.png)
+
 
 Đầu tiên, cho nhập vào 2 biến `x` và `n`. Tiếp theo, lần lượt khởi tạo `s = 0`, `temp = 1` và `i = 0`. Sau đó, mình tạo một vòng lặp với điều kiện `i < n`. Bên trong vòng lặp, `temp *= x` được thực hiện để tăng số mũ của `x` lên 1 đơn vị, `s = sqrt(temp+s)` được thực hiện để tính căn bậc 2 tổng của `temp` với `s` và `i++` được thực hiện để tăng dần `i` đến khi phá vòng lặp. Khi vòng lặp kết thúc, mình thu được `s` là tổng cần tìm.
 
@@ -74,6 +82,8 @@ Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên t
 
 Bài này lúc đầu mình bị lừa, sau mới nhận ra là không cần nhập biến:
 ![image](https://user-images.githubusercontent.com/53972592/140003053-0ae1968a-2880-48db-ac98-058c1f53f322.png)
+![image](https://user-images.githubusercontent.com/53972592/140083300-b3f22566-7674-4e1e-8f5b-b1574fd1e162.png)
+
 
 Đầu tiên, khởi tạo cho các biến `s = 0`, `temp = 1` và `i = 1`. Tiếp theo, mình tạo một vòng lặp với điều kiện là `temp >= 10^-6`. Bên trong vòng lặp, mình cho `s += temp` với `temp = 1/i` và `i` tăng lên 1 đơn vị sau mỗi vòng lặp. Như vậy, `i` càng tăng thì `temp` càng nhỏ và đến một lúc nào đó thì `temp` sẽ nhỏ hơn 10 mũ trừ 6 để phá vòng lặp. Khi đó, biến `s` sẽ là tổng với độ chính xác 10 mũ trừ 6.
 
@@ -82,6 +92,8 @@ Bài này lúc đầu mình bị lừa, sau mới nhận ra là không cần nh�
 
 Mình tự viết thêm hàm pow() để có thể sử dụng và giải quyết bài này:
 ![image](https://user-images.githubusercontent.com/53972592/140004220-cc3ff301-b974-437e-8ec2-caed8b85673b.png)
+![image](https://user-images.githubusercontent.com/53972592/140083426-7b5443b4-16a8-40c2-b709-7a2b38662cbf.png)
+
 
 Trước tiên, mình tạo một hàm pow() nhận hai giá trị lần lượt là cơ số `a` và số mũ `b`. Bên trong hàm, mình khởi tạo hai biến `i = 1` và `temp = a` để sử dụng cho vòng lặp với điều kiện là `i < b`. Với mỗi lần lặp, `a *= temp` được thực hiện và `i` tăng lên một đơn vị cho đến khi bằng `b`. Như vậy, `a *= temp` sẽ được thực hiện `b` lần hay nói cách khác, ta có được `a` mũ `b`. Cuối cùng, khi vòng lặp bị phá, hàm trả về `a`.
 
@@ -95,6 +107,10 @@ Bài 8 có lẽ là bài gây khó chịu cho mình nhất vì nó rất là dà
 ![image](https://user-images.githubusercontent.com/53972592/140005571-f1244496-72fe-4e6f-b614-ff136ca718f6.png)
 ![image](https://user-images.githubusercontent.com/53972592/140005601-3dbae8df-b554-4baa-b0b8-eea5cf685c0b.png)
 ![image](https://user-images.githubusercontent.com/53972592/140005626-aa08d11c-b1f0-49bc-9092-36b824eab95e.png)
+![image](https://user-images.githubusercontent.com/53972592/140087289-d7aaf711-ce6f-4739-be82-cd814eca1e91.png)
+![image](https://user-images.githubusercontent.com/53972592/140087347-fa064003-46c8-4827-b858-09d61bad9c6d.png)
+![image](https://user-images.githubusercontent.com/53972592/140087403-59e8a90d-3dfc-411f-a4f0-de8cd42a5221.png)
+
 
 Mặc dù chưa bao gồm đủ các trường hợp, bài làm vẫn tốn hết 3 lần chụp màn hình nên mình sẽ cố gắng viết thật ngắn gọn.
 
@@ -114,6 +130,8 @@ Mặc dù chưa bao gồm đủ các trường hợp, bài làm vẫn tốn hế
 
 Mình google định nghĩa số chính phương rồi bắt tay vô làm bài này thôi:
 ![image](https://user-images.githubusercontent.com/53972592/140007853-d17f1e8d-478d-4ff5-b9cc-50a3227fc2b1.png)
+![image](https://user-images.githubusercontent.com/53972592/140088617-e25a8ef1-c3af-4c29-91ba-af2f38d75cc6.png)
+
 
 Đầu tiên, cho nhập vào `n`. Tiếp theo, khởi tạo `i = 1` rồi tạo vòng lặp với điều kiện `i*i <= n`. Trong vòng lặp, mình tạo một điều kiện là nếu `i*i == n` thì kết thúc vòng lặp và khẳng định `n` là số chính phương. Nếu lặp lại đến khi hết thỏa điều kiện lặp thì khẳng định `n` không phải là số chính phương.
 
@@ -123,6 +141,8 @@ Mình google định nghĩa số chính phương rồi bắt tay vô làm bài n
 Tương tự bài 7, mình viết thêm hàm rồi bắt tay vô làm thôi:
 
 ![image](https://user-images.githubusercontent.com/53972592/140008728-7363b4d2-08c2-467b-89c2-ebd800d85b65.png)
+![image](https://user-images.githubusercontent.com/53972592/140089037-029f6cfe-5e0f-45cb-8b18-9cbcea1a9e81.png)
+
 
 Bạn đọc vui lòng kéo lên xem lại bài 7, mình đã có giải thích phần tạo hàm pow(). Ở đây sẽ không nhắc lại nữa.
 
