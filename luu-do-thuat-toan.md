@@ -79,3 +79,10 @@ Bài này lúc đầu mình bị lừa, sau mới nhận ra là không cần nh�
 
 ## BÀI 7.
 ![image](https://user-images.githubusercontent.com/53972592/140004071-90d2ed0a-dd32-42f2-b227-f9487f21b193.png)
+
+Mình tự viết thêm hàm pow() để có thể sử dụng và giải quyết bài này:
+![image](https://user-images.githubusercontent.com/53972592/140004220-cc3ff301-b974-437e-8ec2-caed8b85673b.png)
+
+Trước tiên, mình tạo một hàm pow() nhận hai giá trị lần lượt là cơ số `a` và số mũ `b`. Bên trong hàm, mình khởi tạo hai biến `i = 1` và `temp = a` để sử dụng cho vòng lặp với điều kiện là `i < b`. Với mỗi lần lặp, `a *= temp` được thực hiện và `i` tăng lên một đơn vị cho đến khi bằng `b`. Như vậy, `a *= temp` sẽ được thực hiện `b` lần hay nói cách khác, ta có được `a` mũ `b`. Cuối cùng, khi vòng lặp bị phá, hàm trả về `a`.
+
+Khi đã có hàm pow(), mình bát đầu lưu đồ như bình thường. Đầu tiên, cho nhập vào `n`. Kế tiếp, khởi tạo các biến `num = 0`, `i = 1` và `temp = -2`(giá trị của số hạng đầu tiên). Sau đó, mình tạo một vòng lặp với điều kiện `i <= n`. Bên trong vòng lặp, mình cho `num = temp` ngay từ đầu để phòng trường hợp `n` bằng 1 rồi mới tiếp tục cho `temp = temp*5 + 2*pow(3,i+1) - 6*pow(7,i+1) + 12` như công thức của đề bài. Tương tự các bài tập trên, `i++` được thực hiện để tăng giá trị `i` đến khi hết thỏa điều kiện. Cuối cùng, ta thu được `num` là số hạng thứ `n` cần tìm.
