@@ -1,0 +1,3 @@
+# Code lại 10 bài lưu đồ thuật toán
+Sau khi hoàn thành deadline đầu tiên, đây là cái tiếp theo mà mình phải làm. Do là lần đầu viết code ra giấy nên chữ viết có lẽ sẽ gây khó khăn cho người đọc...
+## Bài 1.
