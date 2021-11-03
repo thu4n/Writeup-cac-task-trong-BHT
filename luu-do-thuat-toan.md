@@ -64,6 +64,7 @@ Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên t
 ![image](https://user-images.githubusercontent.com/53972592/139999530-2455e618-e1b4-4c25-9130-dfa5e9d1518a.png)
 
 Để làm bài này, mình đã sử dụng tới hàm sqrt():
+
 ![image](https://user-images.githubusercontent.com/53972592/139999636-4584ee55-5038-471f-9696-62a5da561237.png)
 
 Đầu tiên, cho nhập vào 2 biến `x` và `n`. Tiếp theo, lần lượt khởi tạo `s = 0`, `temp = 1` và `i = 0`. Sau đó, mình tạo một vòng lặp với điều kiện `i < n`. Bên trong vòng lặp, `temp *= x` được thực hiện để tăng số mũ của `x` lên 1 đơn vị, `s = sqrt(temp+s)` được thực hiện để tính căn bậc 2 tổng của `temp` với `s` và `i++` được thực hiện để tăng dần `i` đến khi phá vòng lặp. Khi vòng lặp kết thúc, mình thu được `s` là tổng cần tìm.
