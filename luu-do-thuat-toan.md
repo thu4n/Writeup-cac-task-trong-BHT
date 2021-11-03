@@ -108,3 +108,21 @@ Mặc dù chưa bao gồm đủ các trường hợp, bài làm vẫn tốn hế
       + Không -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
         - Có -> **Tam giác vuông**
         - Không -> **Tam giác thường**
+
+## BÀI 9.
+![image](https://user-images.githubusercontent.com/53972592/140007486-2db6cde3-44b6-49b1-b820-13de3b7c8678.png)
+
+Mình google định nghĩa số chính phương rồi bắt tay vô làm bài này thôi:
+![image](https://user-images.githubusercontent.com/53972592/140007853-d17f1e8d-478d-4ff5-b9cc-50a3227fc2b1.png)
+
+Đầu tiên, cho nhập vào `n`. Tiếp theo, khởi tạo `i = 1` rồi tạo vòng lặp với điều kiện `i*i <= n`. Trong vòng lặp, mình tạo một điều kiện là nếu `i*i == n` thì kết thúc vòng lặp và khẳng định `n` là số chính phương. Nếu lặp lại đến khi hết thỏa điều kiện lặp thì khẳng định `n` không phải là số chính phương.
+
+## BÀI 10.
+![image](https://user-images.githubusercontent.com/53972592/140008679-660012a3-74cb-42de-a1aa-51e1ade4ed46.png)
+
+Tương tự bài 7, mình viết thêm hàm rồi bắt tay vô làm thôi:
+![image](https://user-images.githubusercontent.com/53972592/140008728-7363b4d2-08c2-467b-89c2-ebd800d85b65.png)
+
+Bạn đọc vui lòng kéo lên xem lại bài 7, mình đã có giải thích phần tạo hàm pow(). Ở đây sẽ không nhắc lại nữa.
+
+Đầu tiên, cho nhập vào `n`. Tiếp theo, khởi tạo `m = 0` rồi tạo vòng lặp với điều kiện `pow(5,m) <= n`. Trong vòng lặp, mình tạo một điều kiện là nếu `pow(5,m) == n` thì kết thúc vòng lặp và khẳng định `n` có dạng 5 mũ m. Nếu lặp lại đến khi hết thỏa điều kiện lặp thì khẳng định `n` không có dạng 5 mũ m.
