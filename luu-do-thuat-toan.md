@@ -46,7 +46,7 @@ First, 2 variables `x` and `n` are inputted. Next, I perform the followings:
 
 After that, I create a loop with the condition of `i <= n`. Inside the loop, `s += x/i` is executed to calculate the sum, `x *= temp` is executed to increase the exponent by 1 and `i++` is executed to increase the value of the denominator as well as break the loop. After `i` reached the value of `n`, the loop is stopped and I receive `s` as the sum needed to find.
 
-##BÀI 4.
+## BÀI 4.
 ![image](https://user-images.githubusercontent.com/53972592/139993843-c773b896-5f02-40b2-8e38-5c8bdb70c43d.png)
 
 Tiếp tục sử dụng vòng lặp, lần nầy mình cần một biến để liên tục thay đổi dấu của các phần tử:
@@ -60,7 +60,7 @@ Tiếp tục sử dụng vòng lặp, lần nầy mình cần một biến để
 
 Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên trong vòng lặp, `temp1 *= neg` được thực hiện để thay đổi dấu, `s += temp1*temp2` được thực hiện để tính tổng, `temp2 *= x*x` được thực hiện để tăng số mũ của nó lên 2 đơn vị và `i++` được thực hiện để tăng dần `i` đến khi phá vòng lặp. Khi vòng lặp kết thúc, mình thu được `s` là tổng cần tìm.
 
-##BÀI 5.
+## BÀI 5.
 ![image](https://user-images.githubusercontent.com/53972592/139999530-2455e618-e1b4-4c25-9130-dfa5e9d1518a.png)
 
 Để làm bài này, mình đã sử dụng tới hàm sqrt():
@@ -68,5 +68,5 @@ Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên t
 
 Đầu tiên, cho nhập vào 2 biến `x` và `n`. Tiếp theo, lần lượt khởi tạo `s = 0`, `temp = 1` và `i = 0`. Sau đó, mình tạo một vòng lặp với điều kiện `i < n`. Bên trong vòng lặp, `temp *= x` được thực hiện để tăng số mũ của `x` lên 1 đơn vị, `s = sqrt(temp+s)` được thực hiện để tính căn bậc 2 tổng của `temp` với `s` và `i++` được thực hiện để tăng dần `i` đến khi phá vòng lặp. Khi vòng lặp kết thúc, mình thu được `s` là tổng cần tìm.
 
-##BÀI 6.
+## BÀI 6.
 ![image](https://user-images.githubusercontent.com/53972592/140000155-ca6727bd-7904-4015-ac9b-93769fcb5fd9.png)
