@@ -71,3 +71,11 @@ Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên t
 
 ## BÀI 6.
 ![image](https://user-images.githubusercontent.com/53972592/140000155-ca6727bd-7904-4015-ac9b-93769fcb5fd9.png)
+
+Bài này lúc đầu mình bị lừa, sau mới nhận ra là không cần nhập biến:
+![image](https://user-images.githubusercontent.com/53972592/140003053-0ae1968a-2880-48db-ac98-058c1f53f322.png)
+
+Đầu tiên, khởi tạo cho các biến `s = 0`, `temp = 1` và `i = 1`. Tiếp theo, mình tạo một vòng lặp với điều kiện là `temp >= 10^-6`. Bên trong vòng lặp, mình cho `s += temp` với `temp = 1/i` và `i` tăng lên 1 đơn vị sau mỗi vòng lặp. Như vậy, `i` càng tăng thì `temp` càng nhỏ và đến một lúc nào đó thì `temp` sẽ nhỏ hơn 10 mũ trừ 6 để phá vòng lặp. Khi đó, biến `s` sẽ là tổng với độ chính xác 10 mũ trừ 6.
+
+## BÀI 7.
+![image](https://user-images.githubusercontent.com/53972592/140004071-90d2ed0a-dd32-42f2-b227-f9487f21b193.png)
