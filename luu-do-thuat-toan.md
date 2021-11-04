@@ -10,7 +10,7 @@
 
 Đầu tiên, cho nhập vào biến `x`. Tiếp theo, mình gán giá trị bình phương của `x` vào một biến mới `x2`. Tương tự, mình lại tiếp tục gán trị bình phương của `x2` vào biến `x4` để được **x mũ 4**. Cuối cùng, để có giá trị của **x mũ 11**, mình tạo biến `x11` và gán cho nó giá trị từ biểu thức `x4*x4*x2*x`. Như vậy, sử dụng phép nhân số mũ có cùng cơ số đã giúp mình tìm được giá trị của **x mũ 11** sau **5** phép nhân.
 
-**English translation:**
+### English translation:
 
 First, a variable `x` is inputted. Next, I assign the value of the square of `x` to a new variable `x2`. Similarly, I continue to assign the value of the square of `x2` to the variable `x4` so as to have **x to the power of 4**. Finally, I create a variable named `x11` and assign to it the value of `x4*x4*x2*x`. So, by multiplying exponents with the same base, I am able to find the value of **x to the power of 11** after **5** multiplications.
 
@@ -97,7 +97,7 @@ Mình tự viết thêm hàm pow() để có thể sử dụng và giải quyế
 
 Trước tiên, mình tạo một hàm pow() nhận hai giá trị lần lượt là cơ số `a` và số mũ `b`. Bên trong hàm, mình khởi tạo hai biến `i = 1` và `temp = a` để sử dụng cho vòng lặp với điều kiện là `i < b`. Với mỗi lần lặp, `a *= temp` được thực hiện và `i` tăng lên một đơn vị cho đến khi bằng `b`. Như vậy, `a *= temp` sẽ được thực hiện `b` lần hay nói cách khác, ta có được `a` mũ `b`. Cuối cùng, khi vòng lặp bị phá, hàm trả về `a`.
 
-Khi đã có hàm pow(), mình bát đầu lưu đồ như bình thường. Đầu tiên, cho nhập vào `n`. Kế tiếp, khởi tạo các biến `num = 0`, `i = 1` và `temp = -2`(giá trị của số hạng đầu tiên). Sau đó, mình tạo một vòng lặp với điều kiện `i <= n`. Bên trong vòng lặp, mình cho `num = temp` ngay từ đầu để phòng trường hợp `n` bằng 1 rồi mới tiếp tục cho `temp = temp*5 + 2*pow(3,i+1) - 6*pow(7,i+1) + 12` như công thức của đề bài. Tương tự các bài tập trên, `i++` được thực hiện để tăng giá trị `i` đến khi hết thỏa điều kiện. Cuối cùng, ta thu được `num` là số hạng thứ `n` cần tìm.
+Khi đã có hàm pow(), mình bắt đầu lưu đồ như bình thường. Đầu tiên, cho nhập vào `n`. Kế tiếp, khởi tạo các biến `num = 0`, `i = 1` và `temp = -2`(giá trị của số hạng đầu tiên). Sau đó, mình tạo một vòng lặp với điều kiện `i <= n`. Bên trong vòng lặp, mình cho `num = temp` ngay từ đầu để phòng trường hợp `n` bằng 1 rồi mới tiếp tục cho `temp = temp*5 + 2*pow(3,i+1) - 6*pow(7,i+1) + 12` như công thức của đề bài. Tương tự các bài tập trên, `i++` được thực hiện để tăng giá trị `i` đến khi hết thỏa điều kiện. Cuối cùng, ta thu được `num` là số hạng thứ `n` cần tìm.
 
 ## BÀI 8.
 ![image](https://user-images.githubusercontent.com/53972592/140005295-c35f98c7-6c7e-44b2-b0f1-5a341465fc15.png)
