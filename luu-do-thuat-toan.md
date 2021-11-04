@@ -102,7 +102,7 @@ Khi đã có hàm pow(), mình bát đầu lưu đồ như bình thường. Đ�
 ## BÀI 8.
 ![image](https://user-images.githubusercontent.com/53972592/140005295-c35f98c7-6c7e-44b2-b0f1-5a341465fc15.png)
 
-Bài 8 có lẽ là bài gây khó chịu cho mình nhất vì nó rất là dài và lúc sửa bài, mình phát hiện bài làm còn thiếu 2 trường hợp khác. 2 trường hợp đó mình sẽ nói đến khi code lại lưu đồ nên tạm thời bài làm dưới đây còn thiếu sót:
+Bài 8 có lẽ là bài gây khó chịu cho mình nhất vì nó rất là dài và thêm nữa là lưu đồ thiếu hết 2 trường hợp lúc đầu làm, mình có bổ sung ở bài code:
 
 ![image](https://user-images.githubusercontent.com/53972592/140005571-f1244496-72fe-4e6f-b614-ff136ca718f6.png)
 ![image](https://user-images.githubusercontent.com/53972592/140005601-3dbae8df-b554-4baa-b0b8-eea5cf685c0b.png)
@@ -111,8 +111,7 @@ Bài 8 có lẽ là bài gây khó chịu cho mình nhất vì nó rất là dà
 ![image](https://user-images.githubusercontent.com/53972592/140087347-fa064003-46c8-4827-b858-09d61bad9c6d.png)
 ![image](https://user-images.githubusercontent.com/53972592/140087403-59e8a90d-3dfc-411f-a4f0-de8cd42a5221.png)
 
-
-Mặc dù chưa bao gồm đủ các trường hợp, bài làm vẫn tốn hết 3 lần chụp màn hình nên mình sẽ cố gắng viết thật ngắn gọn.
+**Phần lưu đồ:**
 
 Đầu tiên, cho nhập vào 3 biến `x`,`y` và `z` lần lượt là độ dài 3 cạnh của tam giác. Sau đó, mình xét trường hợp như sau:
   - Độ dài 3 cạnh bằng nhau hết không?
@@ -123,8 +122,19 @@ Mặc dù chưa bao gồm đủ các trường hợp, bài làm vẫn tốn hế
         - Không -> **Tam giác cân.** 
       + Không -> Có bình phương cạnh nào bằng tổng bình phương 2 cạnh còn lại không?
         - Có -> **Tam giác vuông**
-        - Không -> **Tam giác thường**
+        - Không -> **Tam giác thường**        
 
+**Phần code:**
+
+Để bài code không bị dài dòng, mình tạo thêm hai hàm `tgv()` và `tgn()` với các tham số là độ dài 3 cạnh. Hàm `tgv()` sử dụng định lý Py-ta-go để xem tam giác đó có là tam giác vuông không, nếu có thì trả về `True`, ngược lại trả về `False`. Hàm `tgn()` sử dụng định lý cos để xem tam giác đó có phải là tam giác nhọn không, nếu có thì trả về `True`, ngược lại trả về `False`.
+
+Vào bài làm chính, logic tương tự như ở lưu đồ nhưng bây giờ có thêm các trường hợp mới như sau:
+  - Nếu là tam giác cân không vuông, sử dụng hàm `tgn()`:
+    + Giá trị trả về là `True` -> Tam giác nhọn cân
+    + Giá trị trả về là `False` -> Tam giác tù cân
+  - Nếu là tam giác thường, sử dụng hàm `tgn()`:
+    + Giá trị trả về là `True` -> Tam giác nhọn
+    + Giá trị trả về là `False` -> Tam giác tù
 ## BÀI 9.
 ![image](https://user-images.githubusercontent.com/53972592/140007486-2db6cde3-44b6-49b1-b820-13de3b7c8678.png)
 
