@@ -24,7 +24,7 @@ Dạng bài này khi đọc vô thì thứ đầu tiên mình nghĩ tới là d�
 
 Đầu tiên, cho nhập vào biến `n`. Tiếp theo, mình tạo một biến `sum` với giá trị bằng 0 để chứa giá trị của cái tổng mà mình đang tìm. Sau đó, mình tạo một vòng lặp với điều kiện lặp là `n/10 > 0`, mình sẽ giải thích điều kiện này trong lát nữa. Nếu điều kiện được thỏa mãn, mình thực hiện tiếp 2 câu lệnh là `sum += n%10` và `n /= 10`. Khi **chia lấy dư** một số nguyên bất kì có ít nhất 2 chữ số cho 10 trong C++, ta được thương là chữ số cuối cùng của số nguyên đó. Vậy với câu lệnh thứ nhất, chữ số cuối cùng trong `n` được cộng dồn vào `sum` với mỗi lần lặp. Khi **chia** một số nguyên bất kì có ít nhất 2 chữ số cho 10 trong C++, thương là số nguyên đó nhưng mất đi 1 chữ số ở hàng đơn vị. Vậy với câu lệnh thứ hai, `n` sẽ mất đi 1 chữ số ngoài cùng để trong các lần lặp tiếp theo, những chữ số còn lại của `n` sẽ được cộng vào `sum`. Vòng lặp sẽ được thực hiện tới khi `n` còn 1 chữ số, khi đó, nếu lấy `n` chia cho 10 sẽ thu được kết quả là 0. Do đó, điều kiện lặp không còn được thỏa mãn nữa và ta chuyển sang cộng chữ số còn sót lại của `n` vào `sum`. Từ đó, mình thu được `sum` là tổng của các chữ số trong `n`.
 
-**English translation:**
+### English translation:
 
 First, a variable `n` is inputted. Next, I create a variable named `sum` with the value of 0 so as to store the value of the sum I'm looking for. After that, I create a loop with the condition of `n/10 > 0`, I will explain this condition later on. If the condition is satisfied, I continue to execute 2 commands which are `sum += n%10` and `n /= 10`. When **using modulus** of any integer with at least 2 digits and 10 in C++, we get a quotient that is the last digit of said integer. Therefore, with the first command, the last digit in `n` is added to `sum` after each loop. When **dividing** any integer with at least 2 digits by 10 in C++, quotient is said integer but without the digit in the unit position. Thereby, with the second command, `n` will lose 1 digit in the outermost position so that in the following loops, the remaining digits of `n` will be added to `sum`. From that, I receive `sum` as the sum of all the digits in `n`.
 
@@ -42,7 +42,7 @@ Với bài này, mình tiếp tục sử dụng vòng lặp trong đó có sự 
 
 Sau đó, mình tạo một vòng lặp với điều kiện là `i <= n`. Bên trong vòng lặp, `s += x/i` được thực hiện để tính tổng, `x *= temp` được thực hiện để tăng số mũ của `x` lên 1 đơn vị và `i++` được thực hiện để tăng giá trị của mẫu số cũng như để phá vòng lặp. Sau khi `i` đã tăng tới giá trị của `n`, vòng lặp dừng lại và mình thu được `s` là tổng cần tìm.
 
-**English translation:**
+### English translation:
 
 First, 2 variables `x` and `n` are inputted. Next, I perform the followings:
   1. Create a variable `i` with the value of 1.
@@ -60,11 +60,20 @@ Tiếp tục sử dụng vòng lặp, lần nầy mình cần một biến để
 
 Đầu tiên, cho nhập vào 2 biến `x` và `n`.  Tiếp theo, mình thực hiện các công việc sau:
   1. Khởi tạo biến `i` với giá trị bằng 0.
-  2. Khởi tạo biến `temp1` với giá trị bằng `1` và `neg` với giá trị bằng -1, đây là 2 biến dùng để thay đổi dấu.
+  2. Khởi tạo biến `temp1` với giá trị bằng 1 và `neg` với giá trị bằng -1, đây là 2 biến dùng để thay đổi dấu.
   3. Khởi tạo biến `temp2` với giá trị bằng `x*x`, đây là biến để chứa các lũy thừa của `x`.
   4. Khởi tạo biến `s`với giá trị bằng 0, đây là biến để chứa tổng mình đang tìm.
 
 Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên trong vòng lặp, `temp1 *= neg` được thực hiện để thay đổi dấu, `s += temp1*temp2` được thực hiện để tính tổng, `temp2 *= x*x` được thực hiện để tăng số mũ của nó lên 2 đơn vị và `i++` được thực hiện để tăng dần `i` đến khi phá vòng lặp. Khi vòng lặp kết thúc, mình thu được `s` là tổng cần tìm.
+
+### English translation:
+
+First, two variables `x` and `n` are inputted. Next, I perform the followings:
+  1. Create a variable `i` with the value of 0.
+  2. Create two variables `temp1` with the value of 1 and `neg` with the value of -1, these are the two variables used to change the sign of number.
+  3. Create a variable `temp2` with the value of `x*x`, this is the variable for storing the exponential values of `x`.
+  4. Create a variable `s` with the value of 0, this is the variable for storing the sum I'm looking for.
+After that, I create a loop with the condition of `i < n`. Inside the loop, `temp1 *= neg` is executed to change the sign of the variable, `s += temp1*temp2` is executed to calculate the sum, `temp2 *= x*x` is executed to increase the exponent of itself by 2 and `i++` is executed to gradually increase `i` until the loop is broken. After the loop has ended, `s` will be the sum needed to find.
 
 ## BÀI 5.
 ![image](https://user-images.githubusercontent.com/53972592/139999530-2455e618-e1b4-4c25-9130-dfa5e9d1518a.png)
@@ -76,6 +85,9 @@ Sau đó, mình tạo một vòng lặp với điều kiện là `i < n`. Bên t
 
 
 Đầu tiên, cho nhập vào 2 biến `x` và `n`. Tiếp theo, lần lượt khởi tạo `s = 0`, `temp = 1` và `i = 0`. Sau đó, mình tạo một vòng lặp với điều kiện `i < n`. Bên trong vòng lặp, `temp *= x` được thực hiện để tăng số mũ của `x` lên 1 đơn vị, `s = sqrt(temp+s)` được thực hiện để tính căn bậc 2 tổng của `temp` với `s` và `i++` được thực hiện để tăng dần `i` đến khi phá vòng lặp. Khi vòng lặp kết thúc, mình thu được `s` là tổng cần tìm.
+
+### English translation:
+First, two variables `x` and `n` are inputted. Next, I respectively create `s = 0`, `temp = 1` and `i = 0`. After that, I create a loop with the condition of `i < n`. Inside the loop, `temp *= x` is executed to increase the exponent of `x` by 1, `s = sqrt(temp+s)` is executed to calculate the square root of the sum of `temp` and `s`, then, `i++` is executed to gradually increase `i` until the loop is broken. After the loop has ended, `s` will be the sum I need to find.
 
 ## BÀI 6.
 ![image](https://user-images.githubusercontent.com/53972592/140000155-ca6727bd-7904-4015-ac9b-93769fcb5fd9.png)
