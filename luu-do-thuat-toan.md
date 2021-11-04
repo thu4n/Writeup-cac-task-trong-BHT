@@ -8,11 +8,11 @@
 ![image](https://user-images.githubusercontent.com/53972592/140067194-fc89171a-d49f-4ce8-b965-11dd8911a60e.png)
 
 
-Đầu tiên, cho nhập vào biến `x`. Tiếp theo, mình gán giá trị bình phương của `x` vào một biến mới `x2`. Tương tự, mình lại tiếp tục gán trị bình phương của `x2` vào biến `x4` để được **x mũ 4**. Cuối cùng, để có giá trị của **x mũ 11**, mình tạo biến `x11` và gán cho nó giá trị từ biểu thức `x4*x4*x2*x`. Như vậy, sử dụng phép nhân số mũ có cùng cơ số đã giúp mình tìm được giá trị của **x mũ 11** sau **5** phép nhân.
+Đầu tiên, cho nhập vào biến `x`. Tiếp theo, mình gán giá trị bình phương của `x` vào một biến mới `x2`. Tương tự, mình lại tiếp tục gán trị bình phương của `x2` vào biến `x4` để được x mũ 4. Cuối cùng, để có giá trị của x mũ 11, mình tạo biến `x11` và gán cho nó giá trị từ biểu thức `x4*x4*x2*x`. Như vậy, sử dụng phép nhân số mũ có cùng cơ số đã giúp mình tìm được giá trị của **x mũ 11** sau **5** phép nhân.
 
 ### English translation:
 
-First, a variable `x` is inputted. Next, I assign the value of the square of `x` to a new variable `x2`. Similarly, I continue to assign the value of the square of `x2` to the variable `x4` so as to have **x to the power of 4**. Finally, I create a variable named `x11` and assign to it the value of `x4*x4*x2*x`. So, by multiplying exponents with the same base, I am able to find the value of **x to the power of 11** after **5** multiplications.
+First, a variable `x` is inputted. Next, I assign the value of the square of `x` to a new variable `x2`. Similarly, I continue to assign the value of the square of `x2` to the variable `x4` so as to have x to the power of 4. Finally, I create a variable named `x11` and assign to it the value of `x4*x4*x2*x`. So, by multiplying exponents with the same base, I am able to find the value of x to the power of 11 after **5** multiplications.
 
 ## BÀI 2.
 ![image](https://user-images.githubusercontent.com/53972592/139879061-c0e5f4e9-38b1-4c75-a32a-89b6e662fbb7.png)
@@ -98,6 +98,9 @@ Bài này lúc đầu mình bị lừa, sau mới nhận ra là không cần nh�
 
 
 Đầu tiên, khởi tạo cho các biến `s = 0`, `temp = 1` và `i = 1`. Tiếp theo, mình tạo một vòng lặp với điều kiện là `temp >= 10^-6`. Bên trong vòng lặp, mình cho `s += temp` với `temp = 1/i` và `i` tăng lên 1 đơn vị sau mỗi vòng lặp. Như vậy, `i` càng tăng thì `temp` càng nhỏ và đến một lúc nào đó thì `temp` sẽ nhỏ hơn 10 mũ trừ 6 để phá vòng lặp. Khi đó, biến `s` sẽ là tổng với độ chính xác 10 mũ trừ 6.
+
+### English translation:
+First, I create these variables `s = 0`, `temp = 1` and `i = 1`. Next, I create a loop with the condition of `temp >= 10^-6`. Inside the loop, I have `s += temp` with `temp = 1/i` and `i` will increase by 1 after each loop. So, the larger `i` becomes the smaller `temp`is and at a certain point, `temp` will be smaller than 10 to the power of -6 to break the loop. Then, `s` will be the sum with the accuracy of 10 to the power of -6
 
 ## BÀI 7.
 ![image](https://user-images.githubusercontent.com/53972592/140004071-90d2ed0a-dd32-42f2-b227-f9487f21b193.png)
