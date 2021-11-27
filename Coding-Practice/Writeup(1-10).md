@@ -14,3 +14,9 @@ The little elephant in Bản Đôn wants to pay his friend a visit. His house is
 With each move, the elephant can go **1,2,3,4 or 5** steps forward. Find the minimum steps for the little elephant to get to his friend's house.
 ### My solution:
 At first glance, I know that using the 5-step for every move is the optimal way. The only problem is the last few steps which I calculate by subtracting the total `n` for the current value of `step`.
+## [Ex.03 - "Ga Cho":](Code-Files/03-GaCho.cpp)
+### Problem:
+Chickens and dogs, tied up together, xxx number of animals and yy even number of legs. Determine the number of chickens and dogs
+that satisfy the request above.
+### My solution:
+This is one of the math problems we used to learn back in highschool so I just use that knowledge to solve this.
