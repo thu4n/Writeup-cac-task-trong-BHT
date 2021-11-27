@@ -10,5 +10,7 @@ Restraint: 1 <= N <= 10000
 With each loop, I will first check if `n` is smaller or equal to 0 after subtracting it by `i` value. If the condition is satisfied, I will know that Patlu is the last one to move the brick. Otherwise, I contine to subtract `n` by `2*i` and check if `n` is equal or smaller than 0 again to know whether it is Motu or not. Basically, I just use a while loop to subtract the number of bricks in the order of Patlu first and Motu second.
 ## [Ex.02 - "Chuyen Dong":](Code-Files/02-ChuyenDong.cpp)
 ### Problem:
-Chú voi con ở Bản Đôn dự định đến thăm nhà một người bạn. Nhà của chú voi con ở vị trí 0 và nhà bạn chú ở tọa độ x (x>0). Mỗi bước chú có thể di chuyển 1,2,3,4 hoặc 5 vị trí về phía trước. Tìm số bước chân nhỏ nhất để chú voi có thể đế nhà bạn.
-The little elephant in Bản Đôn wants to pay his friend a visit.
+The little elephant in Bản Đôn wants to pay his friend a visit. His house is at point 0 and his friend lives at point **x (x > 0)**.
+With each move, the elephant can go **1,2,3,4 or 5** steps forward. Find the minimum steps for the little elephant to get to his friend's house.
+### My solution:
+At first glance, I know that using the 5-step for every move is the optimal way. The only problem is the last few steps which I calculate by subtracting the total `n` for the current value of `step`(I am aware that the code here is not an efficient way of solving the problem).
