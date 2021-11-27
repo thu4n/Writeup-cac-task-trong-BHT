@@ -13,4 +13,4 @@ With each loop, I will first check if `n` is smaller or equal to 0 after subtrac
 The little elephant in Bản Đôn wants to pay his friend a visit. His house is at point 0 and his friend lives at point **x (x > 0)**.
 With each move, the elephant can go **1,2,3,4 or 5** steps forward. Find the minimum steps for the little elephant to get to his friend's house.
 ### My solution:
-At first glance, I know that using the 5-step for every move is the optimal way. The only problem is the last few steps which I calculate by subtracting the total `n` for the current value of `step`(I am aware that the code here is not an efficient way of solving the problem).
+At first glance, I know that using the 5-step for every move is the optimal way. The only problem is the last few steps which I calculate by subtracting the total `n` for the current value of `step`.
